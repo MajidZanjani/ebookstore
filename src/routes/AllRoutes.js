@@ -9,6 +9,7 @@ import {
   CartPage,
   OrderPage,
   DashboardPage,
+  PageNotFound
 } from '../pages';
 
 export const AllRoutes = () => {
@@ -23,6 +24,7 @@ export const AllRoutes = () => {
         <Route path="cart" element={< ProtectedRoute ><CartPage /></ProtectedRoute>} />
         <Route path="order-summary" element={< ProtectedRoute ><OrderPage /></ProtectedRoute>} />
         <Route path="dashboard" element={< ProtectedRoute ><DashboardPage /></ProtectedRoute>} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
   )
