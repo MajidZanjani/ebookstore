@@ -19,7 +19,7 @@ root.render(
           <ScrollToTop />
           <ToastContainer
             closeButton={false}
-            autoClose={3000}
+            autoClose={3100}
             position={'bottom-right'}
           />
           <App />
